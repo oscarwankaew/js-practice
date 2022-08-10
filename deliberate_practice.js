@@ -94,17 +94,34 @@
 
 // 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
 
-var number = 23;
-if (number > 80) {
-  console.log(5);
-} else if (number > 60) {
-  console.log(4);
-} else if (number > 40) {
-  console.log(3);
-} else if (number > 20) {
-  console.log(2);
-} else {
-  console.log(1);
-}
+// var number = 23;
+// if (number > 80) {
+//   console.log(5);
+// } else if (number > 60) {
+//   console.log(4);
+// } else if (number > 40) {
+//   console.log(3);
+// } else if (number > 20) {
+//   console.log(2);
+// } else {
+//   console.log(1);
+// }
 
 ///////////////////////////////////////////
+// String practice
+
+// 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+// var first = "Oscar";
+// var last = "Wankaew";
+// console.log(first + " " + last);
+
+// 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+// var first = "Oscar";
+// var last = "Wankaew";
+// console.log(`${first} ${last})
+
+// 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+// var word = window.prompt("Enter a word:");
+// if (word === "marco") {
+//   console.log("polo");
+// }
