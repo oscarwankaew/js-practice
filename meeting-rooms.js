@@ -1,4 +1,4 @@
-function meetingTimes(intervals) {
+function meetingRooms(intervals) {
   if (intervals.length < 2) {
     return true;
   }
@@ -20,7 +20,7 @@ function meetingTimes(intervals) {
 }
 
 console.log(
-  meetingTimes([
+  meetingRooms([
     [0, 30],
     [5, 10],
     [15, 20],
