@@ -22,4 +22,4 @@ function decode(string) {
   return solution;
 }
 
-console.log(decode(["3[a2[bc]]"]));
+console.log(decode("3[a]2[bc]"));
