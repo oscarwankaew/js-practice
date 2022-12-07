@@ -20,3 +20,29 @@ while (index < strings.length) {
   index += 1;
 }
 console.log(newStrings);
+
+// 3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+//    For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+var people = [
+  { name: "Alice", age: 27 },
+  { name: "Blane", age: 16 },
+];
+var names = [];
+var index = 0;
+while (index < people.length) {
+  var name = people[index].name;
+  names.push(name);
+  index++;
+}
+console.log(names);
+
+// 4. Start with an array of numbers and create a new array with each number plus 7.
+//    For example, [1, 2, 3] becomes [8, 9, 10].
+var numbers = [1, 2, 3];
+var newNumbers = [];
+var index = 0;
+while (index < numbers.length) {
+  newNumbers.push(numbers[index] + 7);
+  index = index + 1;
+}
+console.log(newNumbers);
