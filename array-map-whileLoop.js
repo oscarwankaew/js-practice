@@ -46,3 +46,29 @@ while (index < numbers.length) {
   index = index + 1;
 }
 console.log(newNumbers);
+
+/ 5. Start with an array of strings and create a new array with each string's length.
+//    For example, ["hello", "goodbye"] becomes [5, 7].
+var words = ["hello", "goodbye"];
+var lengths = [];
+var index = 0;
+while (index < words.length) {
+  var word = words[index];
+  lengths.push(word.length);
+  index++;
+}
+console.log(lengths);
+
+// 6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+//    For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+var people = [
+  { name: "Alice", age: 27 },
+  { name: "Blane", age: 16 },
+];
+var ages = [];
+var index = 0;
+while (index < people.length) {
+  ages.push(people[index]["age"]);
+  index = index + 1;
+}
+console.log(ages);
