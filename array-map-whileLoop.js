@@ -72,3 +72,27 @@ while (index < people.length) {
   index = index + 1;
 }
 console.log(ages);
+
+// 7. Start with an array of numbers and create a new array with each number divided by 2.
+//    For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+var numbers = [1, 2, 3];
+var newNumbers = [];
+var index = 0;
+while (index < numbers.length) {
+  var number = numbers[index];
+  var newNumber = number / 2;
+  newNumbers.push(newNumber);
+  index += 1;
+}
+console.log(newNumbers);
+
+// 8. Start with an array of strings and create a new array with each string's first letter only.
+//    For example, ["hello", "goodbye"] becomes ["h", "g"].
+var strings = ["hello", "goodbye"];
+var letters = [];
+var index = 0;
+while (index < strings.length) {
+  letters.push(strings[index][0]);
+  index++;
+}
+console.log(letters);
