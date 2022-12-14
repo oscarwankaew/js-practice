@@ -52,3 +52,28 @@ Object.entries(things).forEach(function ([name, price]) {
   namePricePairs.push(name, price);
 });
 console.log(namePricePairs);
+
+//  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
+//     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+var people = { 321: { name: "Alice", age: 31 }, 322: { name: "Maria", age: 27 } };
+var peopleArray = [];
+Object.entries(people).forEach(function ([id, person]) {
+  person.id = parseInt(id);
+  peopleArray.push(person);
+});
+console.log(peopleArray);
+
+//  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
+//     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
+var words = ["do", "or", "do", "not"];
+var wordFrequencies = {};
+var index = 0;
+while (index < words.length) {
+  var word = words[index];
+  if (wordFrequencies[word] === undefined) {
+    wordFrequencies[word] = 0;
+  }
+  wordFrequencies[word] += 1;
+  index++;
+}
+console.log(wordFrequencies);
