@@ -34,3 +34,42 @@ while (index1 < letters1.length) {
   index1 += 1;
 }
 console.log(combinedLetters);
+
+//  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
+//     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+var letters = ["a", "b", "c", "d"];
+var letterCombinations = [];
+var index1 = 0;
+while (index1 < letters.length) {
+  var index2 = 0;
+  while (index2 < letters.length) {
+    if (index1 !== index2) {
+      letterCombinations.push(letters[index1] + letters[index2]);
+    }
+    index2 += 1;
+  }
+  index1 += 1;
+}
+console.log(letterCombinations);
+
+//  4. Use a nested loop to find the largest product of any two different numbers within a given array.
+//     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+var numbers = [5, -2, 1, -9, -7, 2, 6];
+var maxProduct = numbers[0] * numbers[1];
+var index1 = 0;
+while (index1 < numbers.length) {
+  var currentNumber = numbers[index1];
+  index2 = 0;
+  while (index2 < numbers.length) {
+    if (index1 !== index2) {
+      var otherNumber = numbers[index2];
+      var product = currentNumber * otherNumber;
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+    index2 = index2 + 1;
+  }
+  index1 = index1 + 1;
+}
+console.log(maxProduct);
