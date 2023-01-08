@@ -110,3 +110,40 @@ while (index1 < numbers1.length) {
   index1 += 1;
 }
 console.log(numberSums);
+
+//  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+//     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+var numbers = [2, 8, 3];
+var productCombinations = [];
+var index1 = 0;
+while (index1 < numbers.length) {
+  var firstNumber = numbers[index1];
+  var index2 = 0;
+  while (index2 < numbers.length) {
+    var secondNumber = numbers[index2];
+    productCombinations.push(firstNumber * secondNumber);
+    index2++;
+  }
+  index1++;
+}
+console.log(productCombinations);
+
+//  8. Use a nested loop to find the largest sum of any two different numbers within an array.
+//     For example, [1, 8, 3, 10] becomes 18.
+var numbers = [1, 8, 3, 10];
+var maxSum = numbers[0] + numbers[1];
+var index1 = 0;
+while (index1 < numbers.length) {
+  var index2 = 0;
+  while (index2 < numbers.length) {
+    if (index1 !== index2) {
+      sum = numbers[index1] + numbers[index2];
+      if (sum > maxSum) {
+        maxSum = sum;
+      }
+    }
+    index2 = index2 + 1;
+  }
+  index1 = index1 + 1;
+}
+console.log(maxSum);
